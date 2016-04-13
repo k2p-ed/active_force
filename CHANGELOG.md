@@ -2,6 +2,11 @@
 
 ## Not released
 
+## 0.7.2
+
+* Update Restforce to 2.2.0
+* Update active_attr to 0.9.0
+
 ## 0.7.1
 
 * Allow sfdc_client to be set. ([#92][])
