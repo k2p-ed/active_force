@@ -12,7 +12,7 @@ module ActiveForce
         _method = @relation_name
         @parent.send :define_method, _method do
           association_cache.fetch _method do
-            query = association.relation_model.query
+            query = association.relation_model.query({ association.foreign_key => self.id })
             if scope = association.options[:scoped_as]
               if scope.arity > 0
                 query.instance_exec self, &scope

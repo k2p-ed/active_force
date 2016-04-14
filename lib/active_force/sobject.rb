@@ -45,8 +45,8 @@ module ActiveForce
       mapping.sfdc_names
     end
 
-    def self.query
-      ActiveForce::ActiveQuery.new self
+    def self.query parent_attributes=nil
+      ActiveForce::ActiveQuery.new self, parent_attributes
     end
 
     def self.build mash

@@ -11,8 +11,9 @@ module ActiveForce
     def_delegators :sobject, :sfdc_client, :build, :table_name, :mappings
     def_delegators :to_a, :each, :map, :inspect
 
-    def initialize sobject
+    def initialize sobject, parent_attributes=nil
       @sobject = sobject
+      @parent_attributes = parent_attributes
       super table_name
       fields sobject.fields
     end
@@ -37,6 +38,11 @@ module ActiveForce
       return self if args.nil?
       super build_condition args, rest
       self
+    end
+
+    def new args={}
+      args.merge! @parent_attributes unless @parent_attributes.nil?
+      sobject.new args
     end
 
     def select *fields
