@@ -1,7 +1,7 @@
 [![Gem Version](http://img.shields.io/gem/v/active_force.svg)](http://badge.fury.io/rb/active_force)
 [![Build Status](http://img.shields.io/travis/ymek/active_force.svg)](https://travis-ci.org/ymek/active_force)
 [![Code Climate](http://img.shields.io/codeclimate/github/ionia-corporation/active_force.svg)](https://codeclimate.com/github/ionia-corporation/active_force)
-[![Dependency Status](http://img.shields.io/gemnasium/ionia-corporation/active_force.svg)](https://gemnasium.com/ionia-corporation/active_force)
+[![Dependency Status](http://img.shields.io/gemnasium/ymek/active_force.svg)](https://gemnasium.com/ymek/active_force)
 [![Test Coverage](https://codeclimate.com/github/ionia-corporation/active_force/badges/coverage.svg)](https://codeclimate.com/github/ionia-corporation/active_force)
 [![Inline docs](http://inch-ci.org/github/ionia-corporation/active_force.png?branch=master)](http://inch-ci.org/github/ionia-corporation/active_force)
 [![Chat](http://img.shields.io/badge/chat-gitter-brightgreen.svg)](https://gitter.im/ionia-corporation/active_force)
